@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>네이버 웹툰 클론</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      border-bottom: 1px solid #eee;
+    }
+
+    .nav-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      font-size: 22px;
+      color: #111;
+    }
+
+    .nav-links a {
+      margin-right: 15px;
+      color: #888;
+      text-decoration: none;
+    }
+
+    .nav-search input {
+      padding: 5px 10px;
+      width: 250px;
+    }
+
+    .nav-search button {
+      margin-left: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .login {
+      background-color: white;
+      border: 1px solid #ccc;
+    }
+
+    .main-nav {
+      display: flex;
+      background-color: #00c73c;
+      padding: 10px 20px;
+    }
+
+    .main-nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    .main-nav a.active {
+      font-weight: bold;
+      border-bottom: 2px solid white;
+    }
+
+    .category {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .sort-links a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: #777;
+    }
+
+    .sort-links .active {
+      color: #00c73c;
+      font-weight: bold;
+    }
+
+    .webtoon-list {
+      display: flex;
+      padding: 0 20px 40px 20px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .webtoon-card {
+      width: 180px;
+    }
+
+    .webtoon-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .webtoon-card .info {
+      margin-top: 5px;
+    }
+
+    .webtoon-card .title {
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .webtoon-card .author {
+      color: #666;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-top">
+      <div class="logo"><strong>NAVER</strong> 웹툰</div>
+      <div class="nav-links">
+        <a href="#">웹소설</a>
+        <a href="#">시리즈</a>
+      </div>
+      <div class="nav-search">
+        <input type="text" placeholder="제목/작가로 검색할 수 있습니다." />
+        <button>🔍</button>
+        <button class="login">로그인</button>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a class="active" href="#">홈</a>
+      <a href="#">웹툰</a>
+      <a href="#">베스트도전</a>
+      <a href="#">도전만화</a>
+      <a href="#">마이페이지</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="category">
+      <h2>일요웹툰</h2>
+      <div class="sort-links">
+        <a href="#" class="active">업데이트순</a>
+        <a href="#">조회순</a>
+        <a href="#">별점순</a>
+      </div>
+    </section>
+
+    <section class="webtoon-list">
+      <div class="webtoon-card">
+        <img src="C:\Users\삼성\Desktop\1.img" alt="웹툰1">
+        <div class="info">
+          <p class="title">권왕환생</p>
+          <p class="author">승투 / 도나스 / 유진성</p>
+        </div>
+      </div>
+      <div class="webtoon-card">
+        <img src="C:\Users\삼성\Desktop\2.img" alt="웹툰2">
+        <div class="info">
+          <p class="title">청춘정식</p>
+          <p class="author">봄소희 / KYMA</p>
+        </div>
+      </div>
+      <div class="webtoon-card">
+        <img src="C:\Users\삼성\Desktop\3.img" alt="웹툰3">
+        <div class="info">
+          <p class="title">여우애담</p>
+          <p class="author">이도광</p>
+        </div>
+      </div>
+      <div class="webtoon-card">
+        <img src="C:\Users\삼성\Desktop\4.img" alt="웹툰4">
+        <div class="info">
+          <p class="title">구해줘 SOS</p>
+          <p class="author">탑토</p>
+        </div>
+      </div>
+      <div class="webtoon-card">
+        <img src="C:\Users\삼성\Desktop\5.img" alt="웹툰5">
+        <div class="info">
+          <p class="title">노빠꾸 최하영</p>
+          <p class="author">우영이</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
